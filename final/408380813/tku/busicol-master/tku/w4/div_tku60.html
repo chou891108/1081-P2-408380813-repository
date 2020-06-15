@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Div Demo</title>
+    <link rel="stylesheet" href="div_tku60.css" />
+    <script>
+      function changeColor(index) {
+        const p = document.getElementById('section');
+        console.log(p);
+        switch (index) {
+          case 1:
+            p.style.backgroundColor = 'yellow';
+            break;
+          case 2:
+            p.style.backgroundColor = 'azure';
+            break;
+          case 3:
+            p.style.backgroundColor = 'cornflowerblue';
+            break;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="heading">
+        <h2>Heading</h2>
+        <ul>
+          <li onclick="changeColor(1)"><a>Link1</a></li>
+          <li onclick="changeColor(2)"><a>Link2</a></li>
+          <li onclick="changeColor(3)"><a>Link3</a></li>
+        </ul>
+      </div>
+      <div id="main">
+        <aside>
+          <ul>
+            <li onclick="changeColor(1)"><a>淡江大戲 1</a></li>
+            <li onclick="changeColor(2)"><a>淡江大戲 2</a></li>
+            <li onclick="changeColor(3)"><a>淡江大戲 3</a></li>
+            <li onclick="changeColor(2)"><a>淡江大戲 4</a></li>
+            <li onclick="changeColor(3)"><a>淡江大戲 5</a></li>
+          </ul>
+        </aside>
+        <div id="section">
+          <div class="iframe-container">
+            <div id="player">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/RechrtUxfQc"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer">Footer</div>
+    </div>
+  </body>
+</html>

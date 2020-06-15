@@ -1,0 +1,9 @@
+#line3 {
+    display: flex;
+  flex-wrap: wrap;
+}
+
+#line3 img {
+    width: 40%;
+  margin: 2%;
+}
